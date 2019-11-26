@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+       style="@style/RoomBooking"
+        android:text="Checkin Date" />
+
+    <TextView
+        android:id="@+id/checkinDate"
+        style="@style/RoomBooking"
+        android:hint="Day-Month-Year"
+        />
+
+    <TextView
+        style="@style/RoomBooking"
+        android:text="Checkout Date"
+         />
+
+    <TextView
+        android:id="@+id/checkoutDate"
+        style="@style/RoomBooking"
+        android:hint="Day-Month-Year"
+        />
+
+    <TextView
+        style="@style/RoomBooking"
+        android:text="Select Room Types" />
+
+    <Spinner
+        android:id="@+id/roomType"
+        style="@style/RoomBooking"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/adult"
+            android:hint="Adult"
+            android:inputType="number"
+            style="@style/AdultChildRoom"/>
+        <EditText
+            android:id="@+id/children"
+            android:hint="Children"
+            android:inputType="number"
+            style="@style/AdultChildRoom"/>
+        <EditText
+            android:id="@+id/room"
+            android:inputType="number"
+            android:hint="Room"
+            style="@style/AdultChildRoom"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/calculate"
+        style="@style/RoomBooking"
+        android:text="Calculate"/>
+    <TextView
+        android:id="@+id/total"
+        style="@style/RoomBooking"
+        android:text="Total"/>
+<!--    <TextView-->
+<!--        android:id="@+id/vat"-->
+<!--        style="@style/RoomBooking"-->
+<!--        android:text="vat 13%"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/grandTotal"-->
+<!--        style="@style/RoomBooking"-->
+<!--        android:text="Grand Total"/>-->
+
+
+</LinearLayout>
